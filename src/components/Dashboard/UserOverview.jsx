@@ -62,6 +62,7 @@ export default function UserOverview() {
             }))
             setIsFetched(true)
         }
+        // eslint-disable-next-line
     }, [fetched])
 
 
@@ -72,7 +73,7 @@ export default function UserOverview() {
                     <Card>
                         <CardContent>
                             <Typography variant="h5" component="h6">
-                                Project Overview
+                                Projects Overview
                             </Typography>
                         </CardContent>
                         <CardContent>
@@ -84,7 +85,7 @@ export default function UserOverview() {
                     <Card>
                         <CardContent>
                             <Typography variant="h5" component="h6">
-                                Region Overview
+                                Projects Region
                             </Typography>
                         </CardContent>
                         <CardContent>

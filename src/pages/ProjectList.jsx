@@ -24,9 +24,6 @@ export default function ProjectList() {
         return <LoadingSpinner />
     }
 
-
-
-    console.log(posts)
     return (
         <Box>
             <PageHeader label="Projects" pageTitle="Project List" />

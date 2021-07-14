@@ -22,7 +22,7 @@ export default function Dashboard() {
 
     return (
         <Box>
-            <PageHeader label="Dashboard" pageTitle="Automation Overview" />
+            <PageHeader label="Dashboard" pageTitle="Automation" />
             <CardGraphs />
             <UserOverview />
             <ListItemComponent posts={posts} users={users} />

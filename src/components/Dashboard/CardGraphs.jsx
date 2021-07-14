@@ -14,17 +14,17 @@ export default function CardGraphs() {
     const [fetched, setIsFetched] = useState(false)
 
     const displayData = [
-        { label: "Post", value: randomValueGenerator({ digit: 100 }), icon: <ArrowDropDownIcon />, iconLabel: "30%" },
-        { label: "Pages", value: randomValueGenerator({ digit: 100 }), icon: <ArrowDropDownIcon />, iconLabel: "20%" },
-        { label: "New Visitor", value: randomValueGenerator({ digit: 100 }), icon: <ArrowDropUpIcon />, iconLabel: "15%" },
-        { label: "Total Visitor", value: randomValueGenerator({ digit: 100 }), icon: <ArrowDropUpIcon />, iconLabel: "20%" },
+        { label: "Pipeline(0-1B)", value: randomValueGenerator({ digit: 100 }), icon: <ArrowDropDownIcon />, iconLabel: "30%" },
+        { label: "WIP(2A-2B)", value: randomValueGenerator({ digit: 100 }), icon: <ArrowDropDownIcon />, iconLabel: "20%" },
+        { label: "Stage 3", value: randomValueGenerator({ digit: 100 }), icon: <ArrowDropUpIcon />, iconLabel: "15%" },
+        { label: "Stage 4", value: randomValueGenerator({ digit: 100 }), icon: <ArrowDropUpIcon />, iconLabel: "20%" },
     ]
 
     const cardGraphData = [
-        { id: "Post", data: fakeArrayGenerator({ count: 9, digit: 100 }), brColor: indigo[500], bgColor: indigo[50] },
-        { id: "Pages", data: fakeArrayGenerator({ count: 9, digit: 100 }), brColor: lightGreen[500], bgColor: lightGreen[50] },
-        { id: "New Visitor", data: fakeArrayGenerator({ count: 9, digit: 100 }), brColor: red[500], bgColor: red[50] },
-        { id: "Total Visitor", data: fakeArrayGenerator({ count: 9, digit: 100 }), brColor: purple[500], bgColor: purple[50] }
+        { id: "Pipeline(0-1B)", data: fakeArrayGenerator({ count: 9, digit: 100 }), brColor: indigo[500], bgColor: indigo[50] },
+        { id: "WIP(2A-2B)", data: fakeArrayGenerator({ count: 9, digit: 100 }), brColor: lightGreen[500], bgColor: lightGreen[50] },
+        { id: "Stage 3", data: fakeArrayGenerator({ count: 9, digit: 100 }), brColor: red[500], bgColor: red[50] },
+        { id: "Stage 4", data: fakeArrayGenerator({ count: 9, digit: 100 }), brColor: purple[500], bgColor: purple[50] }
     ]
 
     useEffect(() => {
@@ -35,7 +35,7 @@ export default function CardGraphs() {
     }, [fetched])
 
     return (
-        <Box className={classes.section}>
+        <Box>
             <Grid container spacing={1}>
                 {displayData.map((item, i) => (
                     <Grid item xs={6} sm={3}>

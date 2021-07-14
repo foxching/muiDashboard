@@ -11,7 +11,7 @@ export default function PageHeader({ label, pageTitle }) {
             <Grid container>
                 <Grid item xs={12} sm={12}>
                     <Typography variant="body2" className={classes.pageSubtitle}>{label}</Typography>
-                    <Typography variant="h5" className={classes.pageTitle}>{pageTitle}</Typography>
+                    <Typography variant="h5" className={classes.pageTitle} gutterBottom>{pageTitle}</Typography>
                 </Grid>
             </Grid>
         </Box>
