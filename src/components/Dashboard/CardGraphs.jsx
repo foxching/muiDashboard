@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react'
-import { Button, Grid, Card, CardContent, Typography } from '@material-ui/core'
+import { Box, Button, Grid, Card, CardContent, Typography } from '@material-ui/core'
 import { DisplayCardGraph } from '../../components/Common/DisplayCardGraph';
 import { randomValueGenerator, fakeArrayGenerator } from "../../utils/fakeArrayGenerator"
 import { useStyles } from "../../styles/dashboardStyle"
@@ -35,21 +35,24 @@ export default function CardGraphs() {
     }, [fetched])
 
     return (
-        <Grid container spacing={1}>
-            {displayData.map((item, i) => (
-                <Grid item xs={6} sm={3}>
-                    <Card className={classes.cardContent}>
-                        <CardContent>
-                            <canvas id={item.label} className={classes.cardGraph}></canvas>
-                            <Typography variant="body2" className={classes.cardLabel}>{item.label}</Typography>
-                            <Typography variant="h6" component="h5" className={classes.cardTitle}>{item.value}</Typography>
-                            <Typography component="p" style={{ textAlign: "center", marginBottom: "0px" }}>
-                                <Button size="small" className={classes.radioBtn} startIcon={item.icon} style={{ color: item.label[0] === "P" ? green[500] : red[800] }}>{item.iconLabel}</Button>
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                </Grid>
-            ))}
-        </Grid>
+        <Box className={classes.section}>
+            <Grid container spacing={1}>
+                {displayData.map((item, i) => (
+                    <Grid item xs={6} sm={3}>
+                        <Card className={classes.cardContent}>
+                            <CardContent>
+                                <canvas id={item.label} className={classes.cardGraph}></canvas>
+                                <Typography variant="body2" className={classes.cardLabel}>{item.label}</Typography>
+                                <Typography variant="h6" component="h5" className={classes.cardTitle}>{item.value}</Typography>
+                                <Typography component="p" style={{ textAlign: "center", marginBottom: "0px" }}>
+                                    <Button size="small" className={classes.radioBtn} startIcon={item.icon} style={{ color: item.label[0] === "P" ? green[500] : red[800] }}>{item.iconLabel}</Button>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                ))}
+            </Grid>
+        </Box>
+
     )
 }

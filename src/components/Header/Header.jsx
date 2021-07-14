@@ -5,11 +5,12 @@ import Navbar from './Navbar'
 import SideNav from './SideNav'
 import Dashboard from '../../pages/Dashboard'
 import Digitalization from '../../pages/Digitalization'
-import Project from "../../pages/Project";
+import ProjectList from "../../pages/ProjectList";
 import Agile from '../../pages/Agile'
 import Notification from '../../pages/Notification'
 import Logout from "../../pages/Logout"
 import { useStyles } from '../../styles/headerStyle'
+import ProjectStaging from '../../pages/ProjectStaging'
 
 export default function Header() {
     const classes = useStyles()
@@ -32,7 +33,8 @@ export default function Header() {
                 <Switch>
                     <Route exact path="/" component={Dashboard} />
                     <Route exact path='/digitalization' component={Digitalization} />
-                    <Route exact path='/project' component={Project} />
+                    <Route exact path='/project-list' component={ProjectList} />
+                    <Route exact path='/project-stage' component={ProjectStaging} />
                     <Route exact path='/agile' component={Agile} />
                     <Route exact path='/admin' component={Notification} />
                     <Route exact path='/logout' component={Logout} />

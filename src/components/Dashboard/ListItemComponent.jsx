@@ -1,7 +1,7 @@
 import React from 'react'
 import { Avatar, Box, Divider, Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Typography } from '@material-ui/core'
 import LoadingSpinner from '../UI/LoadingSpinner'
-import { useStyles } from "../../styles/headerStyle"
+import { useStyles } from "../../styles/dashboardStyle"
 
 export default function ListItemComponent({ posts, users }) {
     const classes = useStyles()
@@ -12,7 +12,7 @@ export default function ListItemComponent({ posts, users }) {
                     <Paper>
                         <List>
                             <ListItem>
-                                <Typography>Top Users</Typography>
+                                <Typography>Top Developers</Typography>
                             </ListItem>
                             <Divider />
                             {users.length === 0 ? <LoadingSpinner /> : users.map((user, i) => (
@@ -34,7 +34,7 @@ export default function ListItemComponent({ posts, users }) {
                     <Paper>
                         <List>
                             <ListItem>
-                                <Typography>Latest Post</Typography>
+                                <Typography>Latest Projects</Typography>
                             </ListItem>
                             <Divider />
                             {posts.length === 0 ? <LoadingSpinner /> : posts.map((post, i) => (

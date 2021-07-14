@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) => ({
     spinnerWrapper: {
+        width: "100%",
         display: "flex",
         minHeight: "250px",
         flexFlow: "row wrap",

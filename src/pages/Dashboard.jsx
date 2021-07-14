@@ -26,6 +26,7 @@ export default function Dashboard() {
             <CardGraphs />
             <UserOverview />
             <ListItemComponent posts={posts} users={users} />
+            <br /><br />
         </Box>
     )
 }

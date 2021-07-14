@@ -40,15 +40,15 @@ export default function UserOverview() {
                 datasets: [
                     {
                         label: "Device Monitoring",
-                        data: fakeArrayGenerator({ count: 3, digit: 1000 }),
-                        backgroundColor: [blue[100], blue[200], blue[300]],
+                        data: fakeArrayGenerator({ count: 3, digit: 100 }),
+                        backgroundColor: [blue[100], blue[200], blue[300], blue[400]],
                         borderColor: blue['A200'],
                         fill: true,
                         tension: 0.5
                     },
 
                 ],
-                xAxisLabels: ["Desktop", "Tablet", "Mobile"]
+                xAxisLabels: ["Philippines", "India", "China"]
             }
         ]
 
@@ -72,7 +72,7 @@ export default function UserOverview() {
                     <Card>
                         <CardContent>
                             <Typography variant="h5" component="h6">
-                                User Overview
+                                Project Overview
                             </Typography>
                         </CardContent>
                         <CardContent>
@@ -84,7 +84,7 @@ export default function UserOverview() {
                     <Card>
                         <CardContent>
                             <Typography variant="h5" component="h6">
-                                Device Overview
+                                Region Overview
                             </Typography>
                         </CardContent>
                         <CardContent>

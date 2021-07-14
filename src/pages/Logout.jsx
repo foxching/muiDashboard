@@ -1,9 +1,11 @@
 import React from 'react'
+import { Box } from '@material-ui/core'
+import PageHeader from "../components/Common/PageHeader"
 
 export default function Logout() {
     return (
-        <div>
-            <h1>Logout</h1>
-        </div>
+        <Box>
+            <PageHeader label="Logout" pageTitle="Please login to coninue" />
+        </Box>
     )
 }

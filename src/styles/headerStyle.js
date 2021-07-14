@@ -31,9 +31,10 @@ export const useStyles = makeStyles((theme) => ({
     },
     //main
     wrapper: {
-        height: "auto",
-        minHeight: "590px",
+        height: "100%",
+        minHeight: "900px",
         background: "#efefef",
+        marginBottom: "10px",
         padding: theme.spacing(2, 2, 0, 34),
         [theme.breakpoints.down('sm')]: {
             padding: theme.spacing(2, 2)
@@ -47,6 +48,9 @@ export const useStyles = makeStyles((theme) => ({
         '& div': {
             color: blueGrey['A400']
         }
+    },
+    nestedLink: {
+        paddingLeft: theme.spacing(4),
     },
     activeNavLinks: {
         color: blue['A700'],
