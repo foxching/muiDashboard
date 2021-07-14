@@ -27,7 +27,7 @@ export default function ProjectList() {
     }
 
     return (
-        <Box>
+        <Box className={classes.section}>
             <Box className={classes.headerWrapper}>
                 <PageHeader label="Projects" pageTitle="Project List" />
                 <Searchbar />

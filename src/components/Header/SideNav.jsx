@@ -7,7 +7,7 @@ export default function SideNav({ mobileOpen, handleDrawerToggle, handleDrawerCl
     const classes = useStyles()
 
     return (
-        <nav className={classes.drawer} aria-label="mailbox folders">
+        <nav className={classes.drawer} >
             <Hidden mdUp implementation="css">
                 <Drawer
                     variant="temporary"

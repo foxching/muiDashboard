@@ -31,8 +31,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     //main
     wrapper: {
-        height: "100%",
-        minHeight: "900px",
+        minHeight: "100vh",
         background: "#efefef",
         marginBottom: "10px",
         padding: theme.spacing(2, 2, 0, 34),

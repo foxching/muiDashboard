@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom';
-import { Box, Collapse, Button, Divider, Paper, Typography } from '@material-ui/core'
+import { NavLink, Link } from 'react-router-dom';
+import { Box, Collapse, Button, Divider, Paper, Typography, Grid } from '@material-ui/core'
+
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails'
 
 import { List, ListItem, ListItemText } from '@material-ui/core'
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import { useStyles } from '../../styles/projectStaginStyle'
 import { checklist } from "../../data/checklist"
+
+import Sticky from 'react-sticky-el'
+
 
 export default function RightPane() {
     const classes = useStyles()
@@ -19,17 +26,16 @@ export default function RightPane() {
 
 
     return (
-        <Paper className={classes.rightWrapper}>
-            <Box mt={-2}>
-                <Typography variant="h6" color="textSecondary" align="center" gutterBottom>Project CheckList</Typography>
-            </Box>
-            <Divider />
-            <Box style={{ maxHeight: "50px", overflow: "hidden", overflowY: "auto", width: "320px" }}>
-                <Typography>
-                    quas?
-                </Typography>
-            </Box>
+        <Grid item xs={12} sm={4}>
+            <Paper className={classes.rightWrapper}>
+                <Box mt={-5}>
+                    <Typography variant="h6" color="textSecondary" align="center" gutterBottom>Project CheckList</Typography>
+                </Box>
+                <Divider />
 
-        </Paper>
+
+            </Paper>
+        </Grid>
+
     )
 }
