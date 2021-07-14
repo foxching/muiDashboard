@@ -10,10 +10,10 @@ import { useStyles } from '../../styles/headerStyle'
 export default function Navbar({ handleDrawerToggle }) {
     const classes = useStyles()
     return (
-        <AppBar position="static">
+        <AppBar position="fixed">
             <Toolbar className={classes.toolbar}>
                 <Typography variant="h6" color="inherit">
-                    {"<Automation/>"}
+                    {"Automation"}
                 </Typography>
                 <Hidden smDown>
                     <Box style={{ display: "flex" }}>

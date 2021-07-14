@@ -3,9 +3,10 @@ import { Switch, Route } from 'react-router-dom'
 import { Box } from '@material-ui/core'
 import Navbar from './Navbar'
 import SideNav from './SideNav'
-import Blog from '../../pages/Blog'
 import Dashboard from '../../pages/Dashboard'
-import Link from '../../pages/Link'
+import Digitalization from '../../pages/Digitalization'
+import Project from "../../pages/Project";
+import Agile from '../../pages/Agile'
 import Notification from '../../pages/Notification'
 import Logout from "../../pages/Logout"
 import { useStyles } from '../../styles/headerStyle'
@@ -30,13 +31,13 @@ export default function Header() {
             <Box className={classes.wrapper}>
                 <Switch>
                     <Route exact path="/" component={Dashboard} />
-                    <Route exact path='/digitalization' component={Blog} />
-                    <Route exact path='/agile' component={Link} />
+                    <Route exact path='/digitalization' component={Digitalization} />
+                    <Route exact path='/project' component={Project} />
+                    <Route exact path='/agile' component={Agile} />
                     <Route exact path='/admin' component={Notification} />
                     <Route exact path='/logout' component={Logout} />
                 </Switch>
             </Box>
-
         </Fragment>
     )
 }

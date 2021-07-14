@@ -3,15 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
 export const useStyles = makeStyles((theme) => ({
-    pageTitle: {
-        color: blueGrey[800],
-        marginBottom: theme.spacing(2),
-        textTransform: 'capitalize'
-    },
-    pageSubtitle: {
-        color: blueGrey[500],
-        margin: theme.spacing(1, 0),
-        textTransform: "uppercase"
+    section: {
+        margin: theme.spacing(3, 0)
     },
     cardLabel: {
         color: blueGrey[500],
@@ -40,9 +33,14 @@ export const useStyles = makeStyles((theme) => ({
     },
     cardGraph: {
         position: "absolute",
-        bottom: 0,
-        left: 0,
+        bottom: "0",
+        left: "0",
         width: "100% !important",
         height: "45% !important"
+    },
+    userGraph: {
+        width: '100%',
+        minHeight: "370px",
+        height: "auto"
     }
 }));

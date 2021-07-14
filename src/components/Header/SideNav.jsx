@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Hidden, Drawer } from '@material-ui/core'
 import SideNavTab from './SideNavTab'
 import { useStyles } from '../../styles/headerStyle'

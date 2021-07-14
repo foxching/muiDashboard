@@ -31,7 +31,8 @@ export const useStyles = makeStyles((theme) => ({
     },
     //main
     wrapper: {
-        height: "100vh",
+        height: "auto",
+        minHeight: "590px",
         background: "#efefef",
         padding: theme.spacing(2, 2, 0, 34),
         [theme.breakpoints.down('sm')]: {
