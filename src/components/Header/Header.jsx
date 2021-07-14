@@ -11,6 +11,7 @@ import Notification from '../../pages/Notification'
 import Logout from "../../pages/Logout"
 import { useStyles } from '../../styles/headerStyle'
 import ProjectStaging from '../../pages/ProjectStaging'
+import ScrollToTop from "../../utils/scrollToTop"
 
 export default function Header() {
     const classes = useStyles()

@@ -26,7 +26,7 @@ export default function SideNavTab({ handleDrawerClose }) {
     const classes = useStyles()
     const [open, setOpen] = useState(false)
 
-    const handleClick = () => {
+    const handleClick = (e) => {
         setOpen(!open)
     }
 
