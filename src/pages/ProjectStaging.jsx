@@ -11,7 +11,7 @@ export default function ProjectStaging() {
             <PageHeader label="Ching" />
             <Grid container spacing={1}>
                 <Grid item xs={12} sm={8}>
-                    Fuck you
+                    Left Column
                 </Grid>
                 <RightPane />
             </Grid>

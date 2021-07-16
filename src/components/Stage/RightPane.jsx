@@ -32,8 +32,6 @@ export default function RightPane() {
                     <Typography variant="h6" color="textSecondary" align="center" gutterBottom>Project CheckList</Typography>
                 </Box>
                 <Divider />
-
-
             </Paper>
         </Grid>
 
